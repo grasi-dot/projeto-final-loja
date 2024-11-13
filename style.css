@@ -87,7 +87,7 @@ body {
 
 .card .content {
   overflow-y: auto;
-  flex: 1; /* Faz o conteúdo acima do `.checkOut` preencher o espaço disponível */
+  flex: 1;
   margin-bottom: 50px;
 }
 
