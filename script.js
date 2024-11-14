@@ -1,9 +1,9 @@
-const openShopping = document.querySelector("#bagIcon");  // Usando o ID para o botão de abertura
+const openShopping = document.querySelector("#bagIcon");
 const closeShopping = document.querySelector(".closeShopping");
 const list = document.querySelector(".list");
-const listCard = document.querySelector(".listCard");  // Corrigido para 'listCards' conforme HTML
+const listCard = document.querySelector(".listCard");
 const total = document.querySelector(".total");
-const body = document.querySelector("body");  // Não há necessidade de usar '.body' pois não existe essa classe
+const body = document.querySelector("body");
 const quantity = document.querySelector(".quantity");
 
 

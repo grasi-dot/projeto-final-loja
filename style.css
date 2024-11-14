@@ -19,8 +19,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 50px;
   margin-top: 50px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .container header .shopping {
@@ -61,11 +61,18 @@ body {
 
 .container .list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto 1fr;
   gap: 20px;
   margin-top: 50px;
   margin-right: 20px;
   margin-left: 20px;
+}
+
+.container .list .category{
+  text-transform: uppercase;
+  letter-spacing: .05em;
+
 }
 
 .card {
@@ -84,6 +91,7 @@ body {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+
 
 .card .content {
   overflow-y: auto;
