@@ -161,58 +161,58 @@ let products = [
 let listCards = [];
 
 const initApp = () => {
-  products.forEach((value, key) => {
+  products.forEach((product, key) => {
+    const { image, category, name, price } = product;
     let newDiv = document.createElement("div");
     newDiv.classList.add("item");
     newDiv.innerHTML = `
-        <img src="./img/store/${value.image}">
-        <div class="category"> ${value.category}</div>
-        <div class="title"> ${value.name}</div>
-        <div class="ratting">
-          <i class='bx bxs-star' ></i>
-          <i class='bx bxs-star' ></i>
-          <i class='bx bxs-star' ></i>
-          <i class='bx bxs-star' ></i>
-          <i class='bx bxs-star-half' ></i>
-        </div>
-
-        <div class="price"> R$ ${(value.price / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })} </div>
-        <button onclick="addToCart(${key})">Add To Cart</button>
+      <img src="./img/store/${image}">
+      <div class="category">${category}</div>
+      <div class="title">${name}</div>
+      <div class="ratting">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half'></i>
+      </div>
+      <div class="price"> R$ ${(price / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })} </div>
+      <button onclick="addToCart(${key})">Add To Cart</button>
     `;
-    list.appendChild(newDiv)
-  })
-}
+    list.appendChild(newDiv);
+  });
+};
 
-initApp()
+initApp();
 
 const addToCart = (key) => {
-  if(listCards[key]== null) {
-    listCards[key] = JSON.parse(JSON.stringify(products[key]));
-    listCards[key].quantity = 1
+  if (!listCards[key]) {
+    const { name, image, price } = products[key];
+    listCards[key] = { name, image, price, quantity: 1 };
   }
-
   reloadCard();
-}
+};
 
 const reloadCard = () => {
   listCard.innerHTML = "";
   let count = 0;
   let totalPrice = 0;
 
-  listCards.forEach((value, key) => {
-    if (value) {
-      totalPrice += value.price * value.quantity;
-      count += value.quantity;
+  listCards.forEach((item, key) => {
+    if (item) {
+      const { image, name, price, quantity } = item;
+      totalPrice += price * quantity;
+      count += quantity;
 
-      let newDiv = document.createElement("li");
+      const newDiv = document.createElement("li");
       newDiv.innerHTML = `
-        <div><img src="./img/store/${value.image}"></div>
-        <div class="cardTitle">${value.name}</div>
-        <div class="cardPrice">${(value.price / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</div>
+        <div><img src="./img/store/${image}"></div>
+        <div class="cardTitle">${name}</div>
+        <div class="cardPrice">${(price / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</div>
         <div>
-          <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-          <span>${value.quantity}</span>
-          <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+          <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ${quantity - 1})">-</button>
+          <span>${quantity}</span>
+          <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ++listCards[${key}].quantity)">+</button>
         </div>
       `;
       listCard.appendChild(newDiv);
@@ -224,11 +224,7 @@ const reloadCard = () => {
 };
 
 const changeQuantity = (key, newQuantity) => {
-  if (newQuantity <= 0) {
-    delete listCards[key];
-  } else {
-    listCards[key].quantity = newQuantity;
-  }
-
+  newQuantity <= 0 ? delete listCards[key] : listCards[key].quantity = newQuantity;
   reloadCard();
-}
+};
+
