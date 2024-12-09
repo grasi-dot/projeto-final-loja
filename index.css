@@ -1,0 +1,110 @@
+* {
+  font-family: textbook-new, sans-serif;
+}
+
+body {
+  background-color: white;
+  margin: 0px;
+}
+
+.container {
+  width: 100vw;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.container header {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.container .navImg {
+  margin-left: 40px;
+}
+
+.container .navImg .homeLogo {
+  height: 100px;
+  background-color: transparent;
+}
+
+.container .main{
+  width: 100vw;
+}
+
+.container main .banner .imgBanner img{
+  width: 100vw;
+}
+
+.container main .bestSellers {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  display: block;
+  text-align: center;
+}
+
+.container main .bestSellers h2 {
+  color: #0a101d;
+  text-transform: uppercase;
+}
+
+.container main .bestSellers .list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.container main .bestSellers .list .item img{
+  width: 280px;
+  height: 410px;
+}
+
+.container main .bestSellers .list .item .category {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #808080;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.container main .bestSellers .list .item .title {
+  font-size: .900rem;
+  font-weight: 400;
+  letter-spacing: .02em;
+  color: #000000;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+.container main .bestSellers .list .item .ratting {
+  color: #FF8C00;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.container main .bestSellers .list .item button {
+  background-color: green;
+  color: #FFFFFF;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  border-style: none;
+  border-radius: 10px;
+}
+
+
+.container footer {
+  background-color: #0a101d;
+  height: 200px;
+}

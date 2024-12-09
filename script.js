@@ -18,143 +18,150 @@ closeShopping.addEventListener("click", () => {
 let products = [
   {
     id: 1,
-    name: "Camiseta chihiro",
-    image: "camisa1.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 0",
+    image: "jujutsu-0.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 2,
-    name: "Camiseta studio ghibli",
-    image: "camisa2.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 1",
+    image: "jujutsu-1.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 3,
-    name: "Camiseta totoro verão",
-    image: "camisa3.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 2",
+    image: "jujutsu-2.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 4,
-    name: "Camiseta totoros",
-    image: "camisa4.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 3",
+    image: "jujutsu-3.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 5,
-    name: "Camiseta meu amigo totoro",
-    image: "camisa5.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 4",
+    image: "jujutsu-4.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 6,
-    name: "Camiseta totoro sleep",
-    image: "camisa6.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 5",
+    image: "jujutsu-5.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 7,
-    name: "Camiseta a viagem de chihiro",
-    image: "camisa7.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 6",
+    image: "jujutsu-6.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 8,
-    name: "Camiseta Kaonashi",
-    image: "camisa8.jpeg",
-    category: "Studio Ghibli",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 7",
+    image: "jujutsu-7.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 9,
-    name: "Camiseta chaisaw man",
-    image: "camisa9.jpeg",
-    category: "Chaisaw Man",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 8",
+    image: "jujutsu-8.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 10,
-    name: "Camiseta studio ghibli blue",
-    image: "camisa10.jpeg",
-    category: "Studio Ghibli",
-    price: 59
+    name: "Jujutsu Kaisen Volume 9",
+    image: "jujutsu-9.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 11,
-    name: "Camiseta megumi",
-    image: "camisa11.jpeg",
+    name: "Jujutsu Kaisen Volume 10",
+    image: "jujutsu-10.jpeg",
     category: "Jujutsu Kaisen",
-    price: 5999
+    price: 3690
   },
   {
     id: 12,
-    name: "Camiseta berserk",
-    image: "camisa12.jpeg",
+    name: "Jujutsu Kaisen Volume 11",
+    image: "jujutsu-11.jpeg",
     category: "Berserk",
-    price: 5999
+    price: 3690
   },
   {
     id: 13,
-    name: "Camiseta anime",
-    image: "camisa13.jpeg",
-    category: "Akira",
-    price: 5999
+    name: "Jujutsu Kaisen Volume 12",
+    image: "jujutsu-12.jpeg",
+    category: "Jujutsu Kaisen",
+    price: 3690
   },
   {
     id: 14,
-    name: "Camiseta choso",
-    image: "camisa14.jpeg",
+    name: "Jujutsu Kaisen Volume 13",
+    image: "jujutsu-13.jpeg",
     category: "Jujutsu Kaisen",
-    price: 5999
+    price: 3690
   },
   {
     id: 15,
-    name: "Camiseta mushoku tensei",
-    image: "camisa15.jpeg",
+    name: "Jujutsu Kaisen Volume 14",
+    image: "jujutsu-14.jpeg",
     category: "Mushoku Tensei",
-    price: 5999
+    price: 3690
   },
   {
     id: 16,
-    name: "Camiseta damon slayer",
-    image: "camisa16.jpeg",
-    category: "Damon Slayer",
-    price: 5999
+    name: "Solo Leveling Volume 1 Manhua",
+    image: "solo-manhua-1.webp",
+    category: "Solo Leveling",
+    price: 6990
   },
   {
     id: 17,
-    name: "Moletom meu amigo totoro",
-    image: "camisa17.jpeg",
-    category: "Studio Ghibli",
-    price: 1599
+    name: "Solo Leveling Volume 2 Manhua",
+    image: "solo-manhua-2.webp",
+    category: "Solo Leveling",
+    price: 6990
   },
   {
     id: 18,
-    name: "Camiseta gato lamem",
-    image: "camisa18.jpeg",
-    category: "Japão",
-    price: 5999
+    name: "Solo Leveling Volume 3 Manhua",
+    image: "solo-manhua-3.webp",
+    category: "Solo Leveling",
+    price: 6990
   },
   {
     id: 19,
-    name: "Camiseta jujutsu kaisen",
-    image: "camisa19.jpeg",
-    category: "Jujutsu Kaisen",
-    price: 5999
+    name: "Solo Leveling Volume 1 Novel",
+    image: "solo-novel-1.webp",
+    category: "Solo Leveling",
+    price: 6990
   },
   {
     id: 20,
-    name: "Camiseta anime black",
-    image: "camisa20.jpeg",
-    category: "Japão",
-    price: 5900
+    name: "Solo Leveling Volume 2 Novel",
+    image: "solo-novel-2.webp",
+    category: "Solo Leveling",
+    price: 6990
+  },
+  {
+    id: 21,
+    name: "Solo Leveling Volume 3 Novel",
+    image: "solo-novel-3.webp",
+    category: "Solo Leveling",
+    price: 6990
   }
 ]
 
@@ -177,13 +184,28 @@ const initApp = () => {
         <i class='bx bxs-star-half'></i>
       </div>
       <div class="price"> R$ ${(price / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })} </div>
-      <button onclick="addToCart(${key})">Add To Cart</button>
+      <button onclick="handleAddToCart(this, ${key})">
+        <i class='bx bx-cart iconCart'></i> Adicionar
+      </button>
     `;
     list.appendChild(newDiv);
   });
 };
 
 initApp();
+
+const handleAddToCart = (button, key) => {
+  addToCart(key);
+  button.innerHTML = "<i class='bx bx-loader-circle iconCart'></i> Adicionando...";
+
+  setTimeout(() => {
+    button.innerHTML = "<i class='bx bx-check-circle iconCart'></i> Adicionado!";
+
+    setTimeout(() => {
+      button.innerHTML = "<i class='bx bx-cart iconCart'></i> Adicionar";
+    }, 2000);
+  }, 2000);
+};
 
 const addToCart = (key) => {
   if (!listCards[key]) {
@@ -210,9 +232,9 @@ const reloadCard = () => {
         <div class="cardTitle">${name}</div>
         <div class="cardPrice">${(price / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</div>
         <div>
-          <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ${quantity - 1})">-</button>
+          <button style="background-color: #375a66" class="cardButton" onclick="changeQuantity(${key}, ${quantity - 1})">-</button>
           <span>${quantity}</span>
-          <button style="background-color: #560bad" class="cardButton" onclick="changeQuantity(${key}, ++listCards[${key}].quantity)">+</button>
+          <button style="background-color: #375a66" class="cardButton" onclick="changeQuantity(${key}, ++listCards[${key}].quantity)">+</button>
         </div>
       `;
       listCard.appendChild(newDiv);
