@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "name": "Jujutsu Kaisen Volume 0",
+    "image": "jujutsu-0.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 2,
+    "name": "Jujutsu Kaisen Volume 1",
+    "image": "jujutsu-1.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 3,
+    "name": "Jujutsu Kaisen Volume 2",
+    "image": "jujutsu-2.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 4,
+    "name": "Jujutsu Kaisen Volume 3",
+    "image": "jujutsu-3.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 5,
+    "name": "Jujutsu Kaisen Volume 4",
+    "image": "jujutsu-4.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 6,
+    "name": "Jujutsu Kaisen Volume 5",
+    "image": "jujutsu-5.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 7,
+    "name": "Jujutsu Kaisen Volume 6",
+    "image": "jujutsu-6.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 8,
+    "name": "Jujutsu Kaisen Volume 7",
+    "image": "jujutsu-7.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 9,
+    "name": "Jujutsu Kaisen Volume 8",
+    "image": "jujutsu-8.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 10,
+    "name": "Jujutsu Kaisen Volume 9",
+    "image": "jujutsu-9.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 11,
+    "name": "Jujutsu Kaisen Volume 10",
+    "image": "jujutsu-10.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 12,
+    "name": "Jujutsu Kaisen Volume 11",
+    "image": "jujutsu-11.jpeg",
+    "category": "Berserk",
+    "price": 3690
+  },
+  {
+    "id": 13,
+    "name": "Jujutsu Kaisen Volume 12",
+    "image": "jujutsu-12.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 14,
+    "name": "Jujutsu Kaisen Volume 13",
+    "image": "jujutsu-13.jpeg",
+    "category": "Jujutsu Kaisen",
+    "price": 3690
+  },
+  {
+    "id": 15,
+    "name": "Jujutsu Kaisen Volume 14",
+    "image": "jujutsu-26.webp",
+    "category": "Mushoku Tensei",
+    "price": 3690
+  },
+  {
+    "id": 16,
+    "name": "Solo Leveling Volume 1 Manhua",
+    "image": "solo-manhua-1.webp",
+    "category": "Solo Leveling",
+    "price": 6990
+  },
+  {
+    "id": 17,
+    "name": "Solo Leveling Volume 2 Manhua",
+    "image": "solo-manhua-2.webp",
+    "category": "Solo Leveling",
+    "price": 6990
+  },
+  {
+    "id": 18,
+    "name": "Solo Leveling Volume 3 Manhua",
+    "image": "solo-manhua-3.webp",
+    "category": "Solo Leveling",
+    "price": 6990
+  },
+  {
+    "id": 19,
+    "name": "Solo Leveling Volume 1 Novel",
+    "image": "solo-novel-1.webp",
+    "category": "Solo Leveling",
+    "price": 6990
+  },
+  {
+    "id": 20,
+    "name": "Solo Leveling Volume 2 Novel",
+    "image": "solo-novel-2.webp",
+    "category": "Solo Leveling",
+    "price": 6990
+  },
+  {
+    "id": 21,
+    "name": "Solo Leveling Volume 3 Novel",
+    "image": "solo-novel-3.webp",
+    "category": "Solo Leveling",
+    "price": 6990
+  },
+  {
+    "id": 22,
+    "name": "Diarios de uma apotecária 1",
+    "image": "apotecary-1.webp",
+    "category": "Diarios de uma apotecária",
+    "price": 4090
+  },
+  {
+    "id": 23,
+    "name": "Diarios de uma apotecária 2",
+    "image": "apotecary-2.webp",
+    "category": "Diarios de uma apotecária",
+    "price": 4090
+  },
+  {
+    "id": 24,
+    "name": "Diarios de uma apotecária 3",
+    "image": "apotecary-3.webp",
+    "category": "Diarios de uma apotecária",
+    "price": 4090
+  },
+  {
+    "id": 25,
+    "name": "Diarios de uma apotecária 4",
+    "image": "apotecary-4.webp",
+    "category": "Diarios de uma apotecária",
+    "price": 4090
+  },
+  {
+    "id": 26,
+    "name": "Diarios de uma apotecária 2",
+    "image": "apotecary-5.webp",
+    "category": "Diarios de uma apotecária",
+    "price": 4090
+  },
+  {
+    "id": 27,
+    "name": "Diarios de uma apotecária 3",
+    "image": "apotecary-7.webp",
+    "category": "Diarios de uma apotecária",
+    "price": 4090
+  },
+  {
+    "id": 28,
+    "name": "Diarios de uma apotecária 4",
+    "image": "apotecary-9.webp",
+    "category": "Diarios de uma apotecária",
+    "price": 4090
+  }
+]

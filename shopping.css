@@ -21,10 +21,41 @@ body {
 
 .container header {
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 200px 1fr 50px;
   margin-right: 40px;
   margin-left: 40px;
 }
+
+.container header .navImg .homeLogo {
+  display: flex;
+  height: 60px;
+  padding-right: 40px;
+  background-color: transparent;
+}
+
+.container header .searchContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 150px;
+}
+
+.container header .searchContainer #searchBar {
+  width: 20vw;
+  height: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.container header .searchContainer #searchButton {
+  position: absolute;
+  background-color: transparent;
+  height: 45px;
+  cursor: pointer;
+  border: none;
+  margin-left: 20%;
+}
+
 
 .container header .shopping {
   position: relative;
@@ -61,10 +92,9 @@ body {
 
 .container .list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto auto 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -291,3 +321,4 @@ body {
   height: 100px;
   background-color: transparent;
 }
+

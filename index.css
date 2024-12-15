@@ -8,65 +8,157 @@ body {
 }
 
 .container {
-  width: 100vw;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  
 }
 
 .container header {
-  display: grid;
-  grid-template-columns: 1fr 50px;
+  display: flex;
+  justify-content: center;
   margin-right: 40px;
   margin-left: 40px;
 }
 
-.container .navImg {
-  margin-left: 40px;
-}
-
-.container .navImg .homeLogo {
-  height: 100px;
+.container header .navImg .homeLogo {
+  height: 60px;
+  padding-right: 40px;
   background-color: transparent;
 }
 
-.container .main{
+.container header .searchContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.container header .searchContainer #searchBar {
+  width: 20vw;
+  height: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.container header .searchContainer #searchButton {
+  position: absolute;
+  background-color: transparent;
+  height: 45px;
+  cursor: pointer;
+  border: none;
+  margin-left: 20%;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.container main{
   width: 100vw;
 }
 
-.container main .banner .imgBanner img{
+.container main .carousel {
+  position: relative;
   width: 100vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container main .carousel .carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.container main .carousel .carouselTrack .carouselItem {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: #0a101d;
+  display: flex;
+}
+
+.container main .carousel .carouselTrack .carouselItem .text {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 10%;
+  z-index: 1000;
+}
+
+.container main .carousel .carouselTrack .carouselItem .text h2{
+  margin-bottom: 10px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Bangers', sans-serif;
+  letter-spacing: 1px;
+  
+}
+
+.container main .carousel .carouselTrack .carouselItem .text p{
+  margin-bottom: 7px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container main .carousel .carouselTrack .carouselItem img {
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+
+}
+
+.container main .carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.container main .carouselButton.prev {
+  left: 10px;
+}
+
+.container main .carouselButton.next {
+  right: 10px;
 }
 
 .container main .bestSellers {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
   display: block;
   text-align: center;
 }
 
 .container main .bestSellers h2 {
   color: #0a101d;
+  font-size: 35px;
   text-transform: uppercase;
+  font-family: 'Bangers', sans-serif;
 }
 
 .container main .bestSellers .list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
-  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2%;
+  margin-top: 35px;
   margin-right: 20px;
   margin-left: 20px;
 }
 
 .container main .bestSellers .list .item img{
-  width: 280px;
-  height: 410px;
+  width: 190px;
+  height: 270px;
 }
 
 .container main .bestSellers .list .item .category {
@@ -103,8 +195,372 @@ body {
   border-radius: 10px;
 }
 
+.container main .tab {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container main .tab .background img {
+  width: 100vw;
+  height: 150px;
+}
+
+.container main .tab .tabsWrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 30px;
+}
+
+.container main .tab .tabsWrapper .tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.container main .tab .tabsWrapper .tabs button {
+  flex: 1;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #f9f9f9;
+  border-bottom: 3px solid transparent;
+  font-size: 18px;
+  color: #0a101d;
+  font-family: 'Bangers', sans-serif;
+}
+
+.container main .tab .tabsWrapper .tabs button.active {
+  border-bottom: 3px solid #4a19aa;
+  font-weight: bold;
+  background-color: #fff;
+  color: #4a19aa;
+}
+
+.container .tabContent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+}
+
+.container .tabContent .apotecaryList,
+.container .tabContent .jujutsuList,
+.container .tabContent .soloList{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2%;
+  text-align: center;
+}
+
+.container .tabContent .apotecaryList .item img,
+.container .tabContent .jujutsuList .item img,
+.container .tabContent .soloList .item img {
+  width: 190px;
+  height: 270px;
+}
+
+.container .tabContent .apotecaryList .item .category,
+.container .tabContent .jujutsuList .item .category,
+.container .tabContent .soloList .item .category {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #808080;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+.container .tabContent .apotecaryList .item .title,
+.container .tabContent .jujutsuList .item .title,
+.container .tabContent .soloList .item .title {
+  font-size: .900rem;
+  font-weight: 400;
+  letter-spacing: .02em;
+  color: #000000;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+.container .tabContent .apotecaryList .item .ratting,
+.container .tabContent .jujutsuList .item .ratting,
+.container .tabContent .soloList .item .ratting {
+  color: #FF8C00;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.container .tabContent .apotecaryList .item button,
+.container .tabContent .jujutsuList .item button,
+.container .tabContent .soloList .item button {
+  background-color: green;
+  color: #FFFFFF;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.container .tabContent.active {
+  display: block;
+}
 
 .container footer {
+  display: block;
   background-color: #0a101d;
+  height: auto;
+}
+
+.container footer .information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0%;
+}
+
+.container footer .information .logo img{
+  width: 200px;
   height: 200px;
 }
+
+.container footer .information .faq {
+  color: white;
+  padding: 15px;
+}
+
+.container footer .information .faq ul {
+  padding: 0px;
+}
+
+.container footer .information .faq ul li {
+	list-style: none;
+}
+
+.container footer .information .faq h4 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  color: #7900ff;
+  margin-bottom: 10px;
+}
+
+.container footer .information .faq ul li {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: bold;
+  color:#fbfdfe;
+  opacity: 80%;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+.container footer .information .faq ul li a {
+	text-decoration: none;
+  font-size: 16px;
+  font-style: bold;
+  color:#fbfdfe;
+  opacity: 80%;
+  text-transform: uppercase;
+}
+
+.container footer .author .copy p{ 
+  color:#fbfdfe;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 40%;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .container main .carousel .carouselTrack .carouselItem .text {
+    margin-top: 4%;
+    text-align: center;
+  }
+
+  .container main .carousel .carouselTrack .carouselItem .text h2{
+    font-size: 15px;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .container main .carousel .carouselTrack .carouselItem .text p{
+    font-size: 8px;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .container main .bestSellers {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+  }
+
+  .container main .bestSellers h2 {
+    color: #0a101d;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Bangers', sans-serif;
+  }
+
+  .container main .bestSellers .list {
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+    gap: 4%;
+    margin-top: 20px;
+  }
+
+  .container main .bestSellers .list .item img{
+    width: 120px;
+    height: 190px;
+  }
+
+  .container main .bestSellers .list .item .category {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .container main .bestSellers .list .item .title {
+    font-size: .800rem;
+    line-height: 1.5;
+    padding-bottom: 10px;
+  }
+  
+  .container main .bestSellers .list .item .ratting {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .container main .bestSellers .list .item button {
+    width: 120px;
+    height: 35px;
+  }
+
+  .container main .tab {
+    height: 900px;
+  }
+
+  .container .tabContent {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .container .tabContent .apotecaryList,
+  .container .tabContent .jujutsuList,
+  .container .tabContent .soloList{
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+    gap: 4%;
+  }
+
+  .container .tabContent .apotecaryList .item img,
+  .container .tabContent .jujutsuList .item img,
+  .container .tabContent .soloList .item img {
+    width: 120px;
+    height: 190px;
+  }
+
+  .container .tabContent .apotecaryList .item .category,
+  .container .tabContent .jujutsuList .item .category,
+  .container .tabContent .soloList .item .category {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+  .container .tabContent .apotecaryList .item .title,
+  .container .tabContent .jujutsuList .item .title,
+  .container .tabContent .soloList .item .title {
+    font-size: .800rem;
+    line-height: 1.5;
+    padding-bottom: 10px;
+  }
+
+  .container .tabContent .apotecaryList .item .ratting,
+  .container .tabContent .jujutsuList .item .ratting,
+  .container .tabContent .soloList .item .ratting {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+
+  .container .tabContent .apotecaryList .item button,
+  .container .tabContent .jujutsuList .item button,
+  .container .tabContent .soloList .item button {
+    width: 120px;
+    height: 35px;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container main .carousel .carouselTrack .carouselItem .text {
+    margin-top: 4%;
+    text-align: center;
+  }
+
+  .container main .carousel .carouselTrack .carouselItem .text h2{
+    font-size: 20px;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .container main .carousel .carouselTrack .carouselItem .text p{
+    font-size: 10px;
+    width: 46%;
+    padding-left: 27%;
+    padding-right: 27%;
+  }
+
+  .container main .bestSellers {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+  }
+
+  .container main .bestSellers h2 {
+    color: #0a101d;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Bangers', sans-serif;
+  }
+
+  .container main .bestSellers .list {
+    margin-top: 20px;
+  }
+
+  .container .tabContent {
+    padding: 20px;
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 562px) {
+  .container main .tab {
+    height: 212vh;
+  }
+}
+
+@media (min-width: 562px) and (max-width: 1100px) {
+  .container main .tab {
+    height: 115vh;
+  }
+
+  .container .tabContent {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+}
+
