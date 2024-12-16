@@ -147,7 +147,7 @@ body {
   font-family: 'Bangers', sans-serif;
 }
 
-.container main .bestSellers .list {
+.container main .bestSellers .bestSellerlist {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 2%;
@@ -156,12 +156,12 @@ body {
   margin-left: 20px;
 }
 
-.container main .bestSellers .list .item img{
+.container main .bestSellers .bestSellerlist .item img{
   width: 190px;
   height: 270px;
 }
 
-.container main .bestSellers .list .item .category {
+.container main .bestSellers .bestSellerlist .item .category {
   text-transform: uppercase;
   letter-spacing: .05em;
   color: #808080;
@@ -169,7 +169,7 @@ body {
   padding-bottom: 15px;
 }
 
-.container main .bestSellers .list .item .title {
+.container main .bestSellers .bestSellerlist .item .title {
   font-size: .900rem;
   font-weight: 400;
   letter-spacing: .02em;
@@ -179,13 +179,13 @@ body {
   padding-bottom: 15px;
 }
 
-.container main .bestSellers .list .item .ratting {
+.container main .bestSellers .bestSellerlist .item .ratting {
   color: #FF8C00;
   font-size: 18px;
   padding-bottom: 10px;
 }
 
-.container main .bestSellers .list .item button {
+.container main .bestSellers .bestSellerlist .item button {
   background-color: green;
   color: #FFFFFF;
   width: 200px;
@@ -338,7 +338,7 @@ body {
 }
 
 .container footer .information .faq ul li {
-	list-style: none;
+	bestSellerlist-style: none;
 }
 
 .container footer .information .faq h4 {
@@ -416,35 +416,35 @@ body {
     font-family: 'Bangers', sans-serif;
   }
 
-  .container main .bestSellers .list {
+  .container main .bestSellers .bestSellerlist {
     grid-template-columns: repeat(auto-fit, minmax(110px, auto));
     gap: 4%;
     margin-top: 20px;
   }
 
-  .container main .bestSellers .list .item img{
+  .container main .bestSellers .bestSellerlist .item img{
     width: 120px;
     height: 190px;
   }
 
-  .container main .bestSellers .list .item .category {
+  .container main .bestSellers .bestSellerlist .item .category {
     padding-top: 5px;
     padding-bottom: 10px;
     font-size: 15px;
   }
   
-  .container main .bestSellers .list .item .title {
+  .container main .bestSellers .bestSellerlist .item .title {
     font-size: .800rem;
     line-height: 1.5;
     padding-bottom: 10px;
   }
   
-  .container main .bestSellers .list .item .ratting {
+  .container main .bestSellers .bestSellerlist .item .ratting {
     font-size: 15px;
     padding-bottom: 5px;
   }
   
-  .container main .bestSellers .list .item button {
+  .container main .bestSellers .bestSellerlist .item button {
     width: 120px;
     height: 35px;
   }
@@ -537,7 +537,7 @@ body {
     font-family: 'Bangers', sans-serif;
   }
 
-  .container main .bestSellers .list {
+  .container main .bestSellers .bestSellerlist {
     margin-top: 20px;
   }
 

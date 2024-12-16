@@ -2,7 +2,7 @@ const track = document.querySelector('.carouselTrack');
 const items = document.querySelectorAll('.carouselItem');
 const prevButton = document.querySelector('.carouselButton.prev');
 const nextButton = document.querySelector('.carouselButton.next');
-const list = document.querySelector(".list");
+const bestSellerlist = document.querySelector(".bestSellerlist");
 const tabs = document.querySelectorAll('.tabLink');
 const tabContents = document.querySelectorAll('.tabContent');
 const apotecaryList = document.querySelector(".apotecaryList");
@@ -190,7 +190,7 @@ searchButton.addEventListener("click", () => {
 });
 
 
-const initApp = () => {
+const initbestSeller = () => {
   best_sellers.forEach((best_seller, key) => {
     const { image, category, name, price } = best_seller;
     let newDiv = document.createElement("div");
@@ -210,7 +210,7 @@ const initApp = () => {
         <i class='bx bx-cart iconCart'></i> Comprar agora
       </button>
     `;
-    list.appendChild(newDiv);
+    bestSellerlist.appendChild(newDiv);
   });
 };
 
@@ -286,7 +286,7 @@ const initTabSolo = () => {
   });
 };
 
-initApp();
+initbestSeller();
 iniTabApotecary();
 iniTabJujutsu();
 initTabSolo();
