@@ -28,6 +28,32 @@ searchButton.addEventListener("click", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const searchButton = document.getElementById("searchButton");
+  const searchBar = document.getElementById("searchBar");
+  const searchContainer = document.getElementById("searchContainer");
+
+  searchButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (window.innerWidth <= 481) { 
+      searchBar.classList.toggle("hidden");
+
+      if (!searchBar.classList.contains("hidden")) {
+        searchBar.focus();
+      }
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (
+      window.innerWidth <= 481 &&
+      !searchContainer.contains(e.target)
+    ) {
+      searchBar.classList.add("hidden");
+    }
+  });
+});
+
 const handleAddToCart = (button, key) => {
   addToCart(key);
   button.innerHTML = "<i class='bx bx-loader-circle iconCart'></i> Adicionando...";
@@ -136,9 +162,4 @@ const initApp = async () => {
   }
 };
 
-
 initApp();
-
-
-
-

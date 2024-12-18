@@ -4,6 +4,7 @@
 
 body {
   background-color: white;
+  margin: 0px;
 }
 
 .container {
@@ -20,10 +21,12 @@ body {
 }
 
 .container header {
+  width: 90%;
   display: grid;
-  grid-template-columns: 200px 1fr 50px;
+  grid-template-columns: 10% 85% 10%;
   margin-right: 40px;
   margin-left: 40px;
+  margin-top: 15px;
 }
 
 .container header .navImg .homeLogo {
@@ -37,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 10px;
-  margin-right: 150px;
+  margin-top: 12px;
 }
 
 .container header .searchContainer #searchBar {
@@ -60,7 +63,7 @@ body {
 .container header .shopping {
   position: relative;
   text-align: right;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .container header .shopping i {
@@ -93,8 +96,9 @@ body {
 .container .list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  text-align: center;
+  align-items: center;
   gap: 20px;
-  margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -144,6 +148,50 @@ body {
   margin: 10px;
 }
 
+.container .list .item {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 50px 50px grey;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+}
+
+.container .list .item img{
+  width: 80%;
+  height: auto;
+}
+
+.container .list .item button {
+  background: green;
+  color: #ffffff;
+  font-size: 1rem;
+
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2;
+  -webkit-transition: all 0.2;
+  -moz-transition: all 0.2;
+  -ms-transition: all 0.2;
+  -o-transition: all 0.2;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -168,15 +216,11 @@ body {
 }
 
 .active .card {
-  left: calc(100% - 500px)
+  left: calc(100% - 500px);
 }
 
 .active .container {
   transform: translateX(-200px);
-  -webkit-transition: tratranslateX(-200px);
-  -moz-transition: translateX(-200px);
-  -ms-transition: translateX(-200px);
-  -o-transition: translateX(-200px);
 }
 
 .card h1 {
@@ -212,53 +256,11 @@ body {
   color: white;
 }
 
-.list .item {
-  text-align: center;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 50px 50px grey;
-  letter-spacing: 1px;
-  transition: all 0.25s ease;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  cursor: pointer;
+.card .listCard {
+  padding-left: 10px;
 }
 
-.list .item img{
-  width: 100%;
-  height: auto;
-}
-
-
-.list .item button {
-  background: #ffffff;
-  color: #375a66;
-  font-size: 1rem;
-  font-weight: 600;
-  width: 100%;
-  padding: 10px;
-  border: 3px solid purple;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2;
-  -webkit-transition: all 0.2;
-  -moz-transition: all 0.2;
-  -ms-transition: all 0.2;
-  -o-transition: all 0.2;
-}
-
-.listCard li {
+.card .listCard li {
   overflow: scroll;
   display: grid;
   grid-template-columns: 100px repeat(3, 1fr);
@@ -267,27 +269,26 @@ body {
   margin-top: 10px;
 }
 
-.listCard li div {
+.card .listCard li div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.listCard li img {
+.card .listCard li img {
   width: 90%;
 }
 
-.listCard .total {
-  margin: 0px 10px;
+.card .listCard .total {
   color: purple;
 }
 
-.cardTitle,
-.cardPrice {
+.card .cardTitle,
+.card .cardPrice {
   color: #FFFFFF;
 }
 
-.cardButton {
+.card .cardButton {
   width: 28px;
   height: 28px;
   background: #ffffff;
@@ -313,12 +314,141 @@ body {
   font-size: 2rem;
 }
 
-.container .navImg {
-  margin-left: 40px;
+.card .topContent .closeShopping i:hover {
+  color: purple;
 }
 
-.container .navImg .homeLogo {
-  height: 100px;
-  background-color: transparent;
+footer {
+  display: block;
+  background-color: #0a101d;
+  height: auto;
+  margin-top: 80px;
 }
 
+footer .information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0%;
+}
+
+footer .information .logo img{
+  width: 200px;
+  height: 200px;
+}
+
+footer .information .faq {
+  color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+footer .information .faq ul {
+  padding: 0px;
+}
+
+footer .information .faq ul li {
+	bestSellerlist-style: none;
+}
+
+footer .information .faq h4 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  color: #7900ff;
+  margin-bottom: 10px;
+}
+
+footer .information .faq ul li {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: bold;
+  color:#fbfdfe;
+  opacity: 80%;
+  padding-top: 5px;
+}
+
+footer .information .faq ul li a {
+	text-decoration: none;
+  font-size: 16px;
+  font-style: bold;
+  color:#fbfdfe;
+  opacity: 80%;
+}
+
+footer .author .copy p{ 
+  color:#fbfdfe;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 40%;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 481px) {
+  .container header {
+    grid-template-columns: 50% 35% 15%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+
+  header .searchContainer {
+    position: relative;
+  }
+
+  header .searchContainer #searchBar.hidden {
+    display: none;
+  }
+
+  header .searchContainer #searchBar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    display: block;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  header .searchContainer button i{
+    color: purple;
+    font-size: 40px;
+  }
+
+  .container header .shopping i {
+    font-size: 40px;
+  }
+
+  .card {
+    width: 100%;
+    left: 100%; /* Escondido */
+  }
+
+  .active .card {
+    left: 0; /* Mostra na tela */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container header {
+    grid-template-columns: 20% 70% 15%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1125px) {
+  footer .information {
+    display: block;
+  }
+}

@@ -16,19 +16,27 @@
       <a class="navImg" href="index.html">
         <img src="img/home.png" alt="home_logo" class="homeLogo">
       </a>
-      <div class="searchContainer">
+      <div class="searchContainer" id="searchContainer">
         <input 
           type="text" 
           id="searchBar" 
-          placeholder="Pesquise produtos..."
+          placeholder="Pesquise ..."
+          class="hidden" 
         />
-        <button id="searchButton">🔍</button>
+        <button id="searchButton">
+          <i class='bx bx-search'></i>
+        </button>
+
+        
       </div>
       <div class="shopping">
         <i class='bx bx-shopping-bag' id="bagIcon" onclick="toggleMenu()"></i>
+
+        <box-icon name='search'></box-icon>
         <span class="quantity">0</span>
       </div>
     </header>
+    
 
     <div class="list">
 
@@ -49,5 +57,34 @@
       <div class="total">0</div>
     </div>
   </div>
+
+  <footer>
+    <div class="information">
+      <div class="logo">
+        <img class="logo" src="img/VOLUME.png" alt="logo">
+      </div>
+      <div class="faq">
+        <h4>Compras</h4>
+          <ul>
+              <li> <a href="index.html">Termos e condiçoes </a></li>
+              <li> <a href="index.html">Formas de pagamento</a></li>
+              <li> <a href="index.html">Perguntas frequentes</a></li>
+          </ul>
+      </div>
+      <div class="faq">
+        <h4>Regulamentos</h4>
+          <ul>
+              <li> <a href="index.html">Termos e condiçoes </a></li>
+              <li> <a href="index.html">Regulamentos</a></li>
+              <li> <a href="index.html">Politica de Privacidade</a></li>
+          </ul>
+      </div>
+
+    </div>
+    <div class="author">
+      <div class="copy">
+        <p> © 2024 CoderHouse <i class='bx bx-heart' style="color:#1CA0D1"></i> Projeto de Javascript por Grasiela Eduarda. </p>
+      </div>
+  </footer>
   <script src="shopping.js"></script>
 </body>

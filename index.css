@@ -358,7 +358,6 @@ body {
   font-style: bold;
   color:#fbfdfe;
   opacity: 80%;
-  text-transform: uppercase;
   padding-top: 5px;
 }
 
@@ -368,7 +367,6 @@ body {
   font-style: bold;
   color:#fbfdfe;
   opacity: 80%;
-  text-transform: uppercase;
 }
 
 .container footer .author .copy p{ 
@@ -555,12 +553,18 @@ body {
 
 @media (min-width: 562px) and (max-width: 1100px) {
   .container main .tab {
-    height: 115vh;
+    height: 100vh;
   }
 
   .container .tabContent {
     padding: 20px;
     padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .container footer .information {
+    display: block;
   }
 }
 
