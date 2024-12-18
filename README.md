@@ -1,7 +1,3 @@
-Fonte base - https://www.youtube.com/watch?v=e6NYBQ6NU74
-
-
-
 # Site Loja virtual de mangas JS 
 
 Projeto final feito pelo curso de HTML e CSS e JS da CoderHouse como projeto final do curso de javascript
