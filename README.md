@@ -2,7 +2,7 @@
 
 Projeto final feito pelo curso de HTML e CSS e JS da CoderHouse como projeto final do curso de javascript
 
-Site: [https://grasi-dot.github.io/studio-Ghibli/](https://grasi-dot.github.io/projeto-final-loja/)
+Site: [https://grasi-dot.github.io/projeto-final-loja/](https://grasi-dot.github.io/projeto-final-loja/)
 
 ## Ferramentas :point_left:
 <div style="display: inline_block"><br>
